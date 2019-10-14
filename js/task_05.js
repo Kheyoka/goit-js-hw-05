@@ -14,12 +14,12 @@ class Car {
     this.distance = 0;
   }
 
-  get price() {
-    return this._price;
-  }
-
   set price(newPrice) {
     return (this._price = newPrice);
+  }
+
+  get price() {
+    return this._price;
   }
 
   turnOn() {
