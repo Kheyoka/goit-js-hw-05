@@ -37,21 +37,18 @@ class Car {
     if (this.speed + value <= this.maxSpeed) {
       this.speed += value;
     }
-    return this.speed;
   }
 
   decelerate(value) {
     if (this.speed - value >= 0) {
       this.speed = this.speed - value;
     }
-    return this.speed;
   }
 
   drive(hours) {
     if ((this.isOn = true)) {
       this.distance = hours * this.speed + this.distance;
     }
-    return this.distance;
   }
 }
 
